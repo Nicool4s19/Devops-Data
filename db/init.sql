@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS tienda_perritos;
 USE tienda_perritos;
 
-//esto se agrega para testear EL CI/CD
+//esto se agrega para testear EL CI/CD V2
 
 CREATE TABLE IF NOT EXISTS productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
