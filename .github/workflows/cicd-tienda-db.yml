@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout código
-      uses: actions/checkout@v4
+      uses: actions/checkout@v1
 
     - name: Configurar credenciales AWS
-      uses: aws-actions/configure-aws-credentials@v5
+      uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -23,7 +23,7 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
 
     - name: Login en Amazon ECR (runner)
-      uses: aws-actions/amazon-ecr-login@v2
+      uses: aws-actions/amazon-ecr-login@v1
       with:
         mask-password: true
 
