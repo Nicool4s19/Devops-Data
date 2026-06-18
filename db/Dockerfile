@@ -1,6 +1,7 @@
 # Imagen base MySQL 8 oficial A
 FROM mysql:8
 
+# Configuración para evitar problemas con rutas en el frontend Pruebas CI/CD V5
 
 # Variables de entorno (se aplicarán automáticamente al iniciar el contenedor)
 ENV MYSQL_ROOT_PASSWORD=admin123
